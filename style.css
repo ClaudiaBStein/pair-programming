@@ -4,7 +4,7 @@ body {
 }
 
 header {
-  width: 750px;
+  width: 100%;
   box-sizing: content-box;
   display: flex;
   padding: auto;
@@ -16,7 +16,7 @@ header {
 #logo1 {
   background-color: rgb(0, 0, 0);
   padding: 3px;
-}
+  
 
 .itemMenu {
   list-style-type: none;
@@ -42,6 +42,7 @@ header {
 .pruebaPremium {
   background-image: url(https://image.freepik.com/foto-gratis/chica-bailando-hip-hop-ropa-elegante-sobre-fondo-degradado-salon-baile-luz-neon_155003-9249.jpg);
   display: inline-block;
+  width: 100%;
 }
 
 .descargaMusica {
