@@ -1,5 +1,5 @@
 :root {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 16px;
   --fontsize-title-big: 42px;
   --fontsize-title-medium: 36px;
@@ -37,6 +37,9 @@
   background-size: contain;
 }
 
+.menu {
+  display: none;
+}
 .trial {
   min-height: 70vh;
   margin-top: 60px;
@@ -51,7 +54,7 @@
 }
 
 .trial .title {
-  margin-top: calc( var(--fontsize-title-big) * 2 );
+  margin-top: calc(var(--fontsize-title-big) * 2);
   font-size: var(--fontsize-title-big);
   font-weight: bold;
   line-height: 1.5em;
@@ -125,7 +128,7 @@
 }
 
 .footer .menu .menulist {
-  display:flex;
+  display: flex;
   flex-wrap: nowrap;
   list-style-type: none;
 }
@@ -150,4 +153,39 @@
   width: 25px;
   height: 18px;
   vertical-align: middle;
+}
+
+@media all and (max-width: 1200px) and (min-width: 769px) {
+  .menu-icon {
+    display: none;
+  }
+
+  .menu {
+    color: white;
+    display: flex;
+    box-sizing: border-box;
+  }
+
+  .list {
+    list-style-type: none;
+    display: flex;
+    box-sizing: border-box;
+  }
+
+  .listItem {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 12px;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .trial .link {
+    margin-left: 0px;
+    text-align: center;
+    width: 150px;
+  }
 }
